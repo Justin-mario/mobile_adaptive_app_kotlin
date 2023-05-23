@@ -33,7 +33,7 @@ fun ReplyApp(
     val replyUiState = viewModel.uiState.collectAsState().value
     val navigationType: ReplyNavigationType
 
-    when(windowSize){
+    when (windowSize){
         WindowWidthSizeClass.Compact -> {
             navigationType = ReplyNavigationType.BOTTOM_NAVIGATION
         }
